@@ -218,3 +218,31 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+# Model weights (too large for GitHub)
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+checkpoints/
+models_cache/
+third_party/
+
+# User photos and results (privacy)
+backend/data/uploads/
+backend/data/results/
+backend/data/test_photos/
+
+# Local environment
+.env
+venv/
+.venv/
+node_modules/
+.next/
+
+# OS and editor
+.DS_Store
+.vscode/
