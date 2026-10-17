@@ -1,0 +1,50 @@
+[
+  {
+    "id": "prod_shirt_classic_white",
+    "name": "Classic White Linen Shirt",
+    "category": "shirt",
+    "cloth_type": "upper",
+    "description": "[Demo Asset - Prototype Specification] Breathable pure linen button-down white shirt for virtual try-on evaluation.",
+    "image_filename": "shirt_classic_white.png"
+  },
+  {
+    "id": "prod_shirt_denim_blue",
+    "name": "Casual Denim Western Shirt",
+    "category": "shirt",
+    "cloth_type": "upper",
+    "description": "[Demo Asset - Prototype Specification] Durable cotton denim casual shirt with snap buttons for virtual try-on evaluation.",
+    "image_filename": "shirt_denim_blue.png"
+  },
+  {
+    "id": "prod_top_floral_summer",
+    "name": "Floral Summer Sleeveless Top",
+    "category": "top",
+    "cloth_type": "upper",
+    "description": "[Demo Asset - Prototype Specification] Lightweight pastel floral summer top for virtual try-on evaluation.",
+    "image_filename": "top_floral_summer.png"
+  },
+  {
+    "id": "prod_top_ribbed_knit",
+    "name": "Ribbed Knit Crewneck Top",
+    "category": "top",
+    "cloth_type": "upper",
+    "description": "[Demo Asset - Prototype Specification] Fitted stretch ribbed knit crewneck top in olive green for virtual try-on evaluation.",
+    "image_filename": "top_ribbed_knit.png"
+  },
+  {
+    "id": "prod_dress_evening_velvet",
+    "name": "Emerald Evening Midi Dress",
+    "category": "dress",
+    "cloth_type": "overall",
+    "description": "[Demo Asset - Prototype Specification] Tailored emerald green evening dress with elegant silhouette for virtual try-on evaluation.",
+    "image_filename": "dress_evening_velvet.png"
+  },
+  {
+    "id": "prod_dress_summer_maxi",
+    "name": "Boho Floral Tiered Maxi Dress",
+    "category": "dress",
+    "cloth_type": "overall",
+    "description": "[Demo Asset - Prototype Specification] Flowing tiered maxi dress with bohemian botanical print for virtual try-on evaluation.",
+    "image_filename": "dress_summer_maxi.png"
+  }
+]
