@@ -233,7 +233,7 @@ third_party/
 
 # User photos and results (privacy)
 backend/data/uploads/
-backend/data/results/
+# backend/data/results/
 backend/data/test_photos/
 
 # Local environment
