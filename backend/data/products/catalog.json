@@ -46,5 +46,13 @@
     "cloth_type": "overall",
     "description": "[Demo Asset - Prototype Specification] Flowing tiered maxi dress with bohemian botanical print for virtual try-on evaluation.",
     "image_filename": "dress_summer_maxi.png"
+  },
+  {
+    "id": "blue_shirt_plain",
+    "name": "US Polo Classical Blue Shirt",
+    "category": "shirt",
+    "cloth_type": "upper",
+    "description": "[Demo Asset - Prototype Specification] US Polo Classical Blue Shirt for virtual try-on evaluation.",
+    "image_filename": "blue-shirt.png"
   }
 ]
