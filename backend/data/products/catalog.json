@@ -1,0 +1,58 @@
+[
+  {
+    "id": "prod_shirt_classic_white",
+    "name": "Classic White T-Shirt",
+    "category": "shirt",
+    "cloth_type": "upper",
+    "description": "[Demo Asset] Plain white cotton t-shirt for virtual try-on evaluation.",
+    "image_filename": "white-tshirt.png"
+  },
+  {
+    "id": "prod_shirt_denim_blue",
+    "name": "Classic Blue Shirt",
+    "category": "shirt",
+    "cloth_type": "upper",
+    "description": "[Demo Asset] Plain blue shirt for virtual try-on evaluation.",
+    "image_filename": "shirt_denim_blue.png"
+  },
+  {
+    "id": "prod_top_floral_summer",
+    "name": "Printed Graphic Tee",
+    "category": "top",
+    "cloth_type": "upper",
+    "description": "[Demo Asset] Printed t-shirt, a harder case because of the pattern.",
+    "image_filename": "printed_tee.jpeg"
+  },
+  {
+    "id": "prod_top_ribbed_knit",
+    "name": "Black Fitted Top",
+    "category": "top",
+    "cloth_type": "upper",
+    "description": "[Demo Asset] Plain black top for virtual try-on evaluation.",
+    "image_filename": "top_black.jpg"
+  },
+  {
+    "id": "prod_shirt_striped",
+    "name": "Striped Shirt",
+    "category": "shirt",
+    "cloth_type": "upper",
+    "description": "[Demo Asset] Striped shirt, a harder case because of the pattern.",
+    "image_filename": "stripped_shirt.png"
+  },
+  {
+    "id": "prod_dress_evening_velvet",
+    "name": "Evening Dress",
+    "category": "dress",
+    "cloth_type": "overall",
+    "description": "[Demo Asset] Evening dress for virtual try-on evaluation.",
+    "image_filename": "dress_evening_velvet.jpg"
+  },
+  {
+    "id": "prod_dress_summer_maxi",
+    "name": "Floral Dress",
+    "category": "dress",
+    "cloth_type": "overall",
+    "description": "[Demo Asset] Floral dress for virtual try-on evaluation.",
+    "image_filename": "dress_floral.jpg"
+  }
+]
