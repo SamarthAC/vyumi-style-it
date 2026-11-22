@@ -1,58 +1,58 @@
 [
   {
     "id": "prod_shirt_classic_white",
-    "name": "Classic White Linen Shirt",
+    "name": "Classic White T-Shirt",
     "category": "shirt",
     "cloth_type": "upper",
-    "description": "[Demo Asset - Prototype Specification] Breathable pure linen button-down white shirt for virtual try-on evaluation.",
-    "image_filename": "shirt_classic_white.png"
+    "description": "[Demo Asset] Plain white cotton t-shirt for virtual try-on evaluation.",
+    "image_filename": "white-tshirt.png"
   },
   {
     "id": "prod_shirt_denim_blue",
-    "name": "Casual Denim Western Shirt",
+    "name": "Classic Blue Shirt",
     "category": "shirt",
     "cloth_type": "upper",
-    "description": "[Demo Asset - Prototype Specification] Durable cotton denim casual shirt with snap buttons for virtual try-on evaluation.",
+    "description": "[Demo Asset] Plain blue shirt for virtual try-on evaluation.",
     "image_filename": "shirt_denim_blue.png"
   },
   {
     "id": "prod_top_floral_summer",
-    "name": "Floral Summer Sleeveless Top",
+    "name": "Printed Graphic Tee",
     "category": "top",
     "cloth_type": "upper",
-    "description": "[Demo Asset - Prototype Specification] Lightweight pastel floral summer top for virtual try-on evaluation.",
-    "image_filename": "top_floral_summer.png"
+    "description": "[Demo Asset] Printed t-shirt, a harder case because of the pattern.",
+    "image_filename": "printed_tee.jpeg"
   },
   {
     "id": "prod_top_ribbed_knit",
-    "name": "Ribbed Knit Crewneck Top",
+    "name": "Black Fitted Top",
     "category": "top",
     "cloth_type": "upper",
-    "description": "[Demo Asset - Prototype Specification] Fitted stretch ribbed knit crewneck top in olive green for virtual try-on evaluation.",
-    "image_filename": "top_ribbed_knit.png"
+    "description": "[Demo Asset] Plain black top for virtual try-on evaluation.",
+    "image_filename": "top_black.jpg"
+  },
+  {
+    "id": "prod_shirt_striped",
+    "name": "Striped Shirt",
+    "category": "shirt",
+    "cloth_type": "upper",
+    "description": "[Demo Asset] Striped shirt, a harder case because of the pattern.",
+    "image_filename": "stripped_shirt.png"
   },
   {
     "id": "prod_dress_evening_velvet",
-    "name": "Emerald Evening Midi Dress",
+    "name": "Evening Dress",
     "category": "dress",
     "cloth_type": "overall",
-    "description": "[Demo Asset - Prototype Specification] Tailored emerald green evening dress with elegant silhouette for virtual try-on evaluation.",
-    "image_filename": "dress_evening_velvet.png"
+    "description": "[Demo Asset] Evening dress for virtual try-on evaluation.",
+    "image_filename": "dress_evening_velvet.jpg"
   },
   {
     "id": "prod_dress_summer_maxi",
-    "name": "Boho Floral Tiered Maxi Dress",
+    "name": "Floral Dress",
     "category": "dress",
     "cloth_type": "overall",
-    "description": "[Demo Asset - Prototype Specification] Flowing tiered maxi dress with bohemian botanical print for virtual try-on evaluation.",
-    "image_filename": "dress_summer_maxi.png"
-  },
-  {
-    "id": "blue_shirt_plain",
-    "name": "US Polo Classical Blue Shirt",
-    "category": "shirt",
-    "cloth_type": "upper",
-    "description": "[Demo Asset - Prototype Specification] US Polo Classical Blue Shirt for virtual try-on evaluation.",
-    "image_filename": "blue-shirt.png"
+    "description": "[Demo Asset] Floral dress for virtual try-on evaluation.",
+    "image_filename": "dress_floral.jpg"
   }
 ]

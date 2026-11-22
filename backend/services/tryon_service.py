@@ -12,7 +12,7 @@ import uuid
 import logging
 from pathlib import Path
 from typing import Optional, Callable
-from PIL import Image
+from PIL import Image, ImageFilter
 
 logger = logging.getLogger("vyumi.tryon")
 
@@ -33,6 +33,7 @@ WIDTH, HEIGHT = 768, 1024
 DEFAULT_STEPS = 50
 DEFAULT_CFG = 2.5
 DEFAULT_SEED = 42
+DEFAULT_BACKGROUND = os.environ.get("TRYON_BACKGROUND", "original")
 
 class TryOnError(Exception):
     """Exception raised by the try-on engine with code and human-readable message."""
@@ -175,6 +176,7 @@ def run_tryon(
     steps: int = DEFAULT_STEPS,
     cfg: float = DEFAULT_CFG,
     seed: int = DEFAULT_SEED,
+    background: str = DEFAULT_BACKGROUND,
 ) -> str:
     """
     Run one virtual try-on inference and return the generated image path.
@@ -233,6 +235,15 @@ def run_tryon(
                 guidance_scale=cfg,
                 generator=generator,
             )[0]
+            soft = mask.convert("L").filter(ImageFilter.GaussianBlur(3))
+            result = Image.composite(result, person, soft)  # real pixels outside the garment
+
+            if background and background != "original":
+                try:
+                    from backend.services import background_service
+                    result = background_service.apply_backdrop(result, background)
+                except Exception:
+                    logger.exception("Backdrop failed; using original background")
 
             out_path = RESULTS_DIR / f"{uuid.uuid4().hex}.png"
             result.save(out_path)
@@ -247,6 +258,7 @@ def run_tryon(
         except TryOnError:
             raise
         except Exception:
+            logger.exception("Try-on failed")
             torch.cuda.empty_cache()
             raise TryOnError(
                 "GENERATION_FAILED",

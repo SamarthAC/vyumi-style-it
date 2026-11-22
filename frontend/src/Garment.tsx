@@ -1,9 +1,12 @@
-import { useId } from "react";
+import { useId, useState } from "react";
 import { palette, type Product } from "./catalog";
+import { assetUrl } from "./api";
 
-/** Original vector artwork. The backend currently supplies placeholder assets. */
+/** Shows the real garment photo; falls back to the vector illustration if it can't load. */
 export default function Garment({ product }: { product: Product }) {
   const id = useId().replace(/:/g, "");
+  const [photoFailed, setPhotoFailed] = useState(false);
+
   const color = palette[product.id]?.color || "#a7b29b";
   const shirt = product.category === "shirt";
   const dress = product.category === "dress";
@@ -15,6 +18,19 @@ export default function Garment({ product }: { product: Product }) {
       : floral
         ? "M118 48 141 43Q160 65 179 43L202 48 195 88 202 254Q160 275 118 254L125 88Z"
         : "M113 58 141 46Q160 64 179 46L207 58 241 105 216 127 198 111 203 259Q160 270 117 259L122 111 104 127 79 105Z";
+
+  // Real garment photo from the backend. If it fails to load, fall through to the illustration.
+  if (!photoFailed) {
+    return (
+      <img
+        src={assetUrl(product.image_url || `/products/${product.id}/image`)}
+        alt={product.name}
+        onError={() => setPhotoFailed(true)}
+        style={{ width: "100%", height: "100%", objectFit: "contain" }}
+      />
+    );
+  }
+
   return (
     <svg
       viewBox="0 0 320 340"
